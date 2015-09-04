@@ -1,4 +1,11 @@
+
+<script src="//code.jquery.com/2.1.4.min.js"></script>
 <script>
+var accessToken = window.location.href.match(/\?access_token=(.*)/)[1];
+if(accessToken){
+  $(".editable").attr("content-editable", "true");
+  $("body").append("<button>Save</button>")
+}
 </script>
-<h1>Test</h1>
+<h1 class="editable">Test</h1>
 <a href="https://github.com/login/oauth/authorize?client_id=6796421fbf29cfb0ffc4&state=http://masonforest.github.io/ventana_test/">Login</a>
