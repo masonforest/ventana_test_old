@@ -4,7 +4,7 @@
 $(function(){
   var accessToken = window.location.href.match(/\?access_token=(.*)/)[1];
   if(accessToken){
-    $(".editable").attr("content-editable", "true");
+    $(".editable").attr("contenteditable", "true");
     $("body").append("<button>Save</button>")
   }
   });
